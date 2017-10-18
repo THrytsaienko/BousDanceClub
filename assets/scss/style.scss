@@ -58,6 +58,11 @@ h3:after {
     overflow: hidden;
     background: #f4f4f4;
     padding: 1%;
+    a,
+    a:hover {
+        text-decoration: none;
+        color: #000;
+    }
 }
 
 .allfordance img {

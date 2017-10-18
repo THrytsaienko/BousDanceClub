@@ -23,26 +23,26 @@ gulp.task('deleteDocsFolder', function () {
 
 gulp.task('copyGeneralFiles', ['deleteDocsFolder'], function () {
     var pathsToCopy = [
-        './assets/**/*',
-        '!./assets/index.html',
-        '!./assets/img/**',
-        '!./assets/css/**',
-        '!./assets/js/**',
-        '!./assets/temp',
-        '!./assets/temp/**'
+        './app/**/*',
+        '!./app/index.html',
+        '!./app/assets/images/**',
+        '!./app/assets/styles/**',
+        '!./app/assets/scripts/**',
+        '!./app/temp',
+        '!./app/temp/**'
     ]
     return gulp.src(pathsToCopy)
         .pipe(gulp.dest("./docs"));
 });
 
 gulp.task('optimizeImages', ['deleteDocsFolder'], function () {
-    return gulp.src('./assets/img/**/*')
+    return gulp.src('./app/assets/images/**/*')
         .pipe(imagemin({
             progressive: true,
             interlaced: true,
             multipass: true
         }))
-        .pipe(gulp.dest("./docs/assets/img"));
+        .pipe(gulp.dest("./docs/assets/images"));
 });
 
 gulp.task('useminTrigger', ['deleteDocsFolder'], function () {
@@ -50,7 +50,7 @@ gulp.task('useminTrigger', ['deleteDocsFolder'], function () {
 });
 
 gulp.task('usemin', ['styles', 'scripts'], function () {
-    return gulp.src("./assets/index.html")
+    return gulp.src("./app/index.html")
         .pipe(usemin({
             css: [function () {
                 return rev()

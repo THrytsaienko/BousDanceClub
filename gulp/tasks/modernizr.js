@@ -2,11 +2,11 @@ var gulp = require('gulp'),
 modernizr = require('gulp-modernizr');
 
 gulp.task('modernizr', function(){
-    return gulp.src(['./assets/css/**/*.css', './assets/js/**/*.js'])
+    return gulp.src(['./app/assets/styles/**/*.css', './app/assets/scripts/**/*.js'])
     .pipe(modernizr({
         "options": [
             "setClasses"
         ]
     }))
-    .pipe(gulp.dest('./assets/temp/js/'));
+    .pipe(gulp.dest('./app/temp/scripts/'));
 });

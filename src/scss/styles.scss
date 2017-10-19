@@ -1,3 +1,51 @@
+/*------------------------------------- HEADER -------------------------------------------*/
+
+#header {
+    .upper-header p {
+        padding-top: 1%;
+        font-size: 17px;
+    }
+    .our_title {
+        font-size: 14px;
+        padding-top: 13px;
+    }
+    .two-logos {
+        padding-top: 15px;
+    }
+    .affix {
+        top: 0;
+        width: 110%;
+        left: -10%;
+        padding-left: 35%;
+        position: fixed;
+        z-index: 9999;
+    }
+    .affix+.container-fluid {
+        padding-top: 100px;
+        padding-left: 150px;
+    }
+}
+
+
+/*------------------------------------- INFO ABOUT US -------------------------------------------*/
+
+#advantages {
+    .container-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .advantages__item {
+        margin: 3px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../img/other_icons/background.jpg');
+        color: #fff;
+        border: 1px #ccc solid;
+        padding: 10px;
+        flex-basis: 300px;
+    }
+}
+
+
 /*------------------------------------- COMMON SETTINGS-----------------------------------*/
 
 html,
@@ -19,10 +67,6 @@ h2:after {
     width: 100px;
     margin: 0 auto;
     margin-top: 15px;
-}
-
-.wrapper {
-    height: 100%;
 }
 
 .clear {
@@ -189,37 +233,6 @@ h3:after {
 }
 
 
-/*------------------------------------- HEADER -------------------------------------------*/
-
-.upper-header p {
-    padding-top: 1%;
-    font-size: 17px;
-}
-
-.our_title {
-    font-size: 14px;
-    padding-top: 13px;
-}
-
-.two-logos {
-    padding-top: 15px;
-}
-
-.affix {
-    top: 0;
-    width: 110%;
-    left: -10%;
-    padding-left: 35%;
-    position: fixed;
-    z-index: 9999;
-}
-
-.affix+.container-fluid {
-    padding-top: 100px;
-    padding-left: 150px;
-}
-
-
 /*------------------------------------- COLLAGE -------------------------------------------*/
 
 .collage {
@@ -277,26 +290,6 @@ h3:after {
 
 .coach_description {
     font-size: 18px;
-}
-
-
-/*------------------------------------- INFO ABOUT US -------------------------------------------*/
-
-.container-info div {
-    border: 1px #ccc solid;
-    padding: 10px;
-}
-
-.box-1,
-.box-2,
-.box-3,
-.box-4,
-.box-5 {
-    margin: 3px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../img/other_icons/background.jpg');
-    width: 100%;
-    color: #000;
-    font-size: 26px;
 }
 
 

@@ -21,6 +21,24 @@ $(document).ready(() => {
     });
 });
 
+// LAZYLOAD PHOTOS
+
+$(document).ready(() => {
+    $('.lazy').Lazy();
+});
+
+// $('.lazy').Lazy({
+//     // your configuration goes here
+//     scrollDirection: 'vertical',
+//     effect: 'fadeIn',
+//     visibleOnly: true
+// });
+
+
+// $(function () {
+//     $('.lazy').lazy();
+// });
+
 
 // SLICK CONTACTS
 $(document).ready(() => {
@@ -118,9 +136,9 @@ $(document).ready(() => {
     var options = {
         height: "1000px"
     }
-    PDFObject.embed("/assets/pdf/rules/school-rules.pdf", "#school-rules", options);
-    PDFObject.embed("/assets/pdf/rules/age-category-inf.pdf", "#age-category-inf", options);
-    PDFObject.embed("/assets/pdf/rules/dance-inf.pdf", "#dance-inf", options);
-    PDFObject.embed("/assets/pdf/rules/clothes-inf.pdf", "#clothes-inf", options);
+    PDFObject.embed("/src/pdf/rules/school-rules.pdf", "#school-rules", options);
+    PDFObject.embed("/src/pdf/rules/age-category-inf.pdf", "#age-category-inf", options);
+    PDFObject.embed("/src/pdf/rules/dance-inf.pdf", "#dance-inf", options);
+    PDFObject.embed("/src/pdf/rules/clothes-inf.pdf", "#clothes-inf", options);
 
 });

@@ -4,17 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "/gulp/gulp"
+    "start": "gulp"
   },
   "author": "THrytsaienko",
   "license": "ISC",
   "dependencies": {
-    "jquery": "3.2.1",
-    "lazysizes": "4.0.0-rc3",
-    "waypoints": "4.0.1",
     "bootstrap": "3.3.7",
     "font-awesome": "4.7.0",
-    "popper.js": "1.12.5"
+    "jquery": "3.2.1",
+    "jquery-lazy": "^1.7.5",
+    "lazysizes": "4.0.0-rc3",
+    "popper.js": "1.12.5",
+    "waypoints": "4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "7.1.2",

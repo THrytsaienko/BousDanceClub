@@ -21,24 +21,6 @@ $(document).ready(() => {
     });
 });
 
-// LAZYLOAD PHOTOS
-
-$(document).ready(() => {
-    $('.lazy').Lazy();
-});
-
-// $('.lazy').Lazy({
-//     // your configuration goes here
-//     scrollDirection: 'vertical',
-//     effect: 'fadeIn',
-//     visibleOnly: true
-// });
-
-
-// $(function () {
-//     $('.lazy').lazy();
-// });
-
 
 // SLICK CONTACTS
 $(document).ready(() => {
@@ -142,3 +124,16 @@ $(document).ready(() => {
     PDFObject.embed("/src/pdf/rules/clothes-inf.pdf", "#clothes-inf", options);
 
 });
+
+
+// LAZYLOAD PHOTOS
+// $(document).ready(() => {
+//     $('.lazy').Lazy();
+// });
+
+// $('.lazy').Lazy({
+//     // your configuration goes here
+//     scrollDirection: 'vertical',
+//     effect: 'fadeIn',
+//     visibleOnly: true
+// });

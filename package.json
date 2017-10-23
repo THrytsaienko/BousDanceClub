@@ -13,7 +13,6 @@
     "font-awesome": "4.7.0",
     "jquery": "3.2.1",
     "jquery-lazy": "^1.7.5",
-    "lazysizes": "4.0.0-rc3",
     "popper.js": "1.12.5",
     "waypoints": "4.0.1"
   },

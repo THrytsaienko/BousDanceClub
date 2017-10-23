@@ -52,11 +52,8 @@ gulp.task('deleteDocsFolder', function () {
 gulp.task('copyGeneralFiles', ['deleteDocsFolder'], function () {
     var pathsToCopy = [
         './src/**/*',
-        '!./src/*.html',
-        '!./src/img/**',
-        '!./src/css/**',
-        '!./src/js/**',
-        '!./src/sass/**'
+        '!./src/img/**/*', ,
+        '!./src/scss'
     ]
     return gulp.src(pathsToCopy)
         .pipe(gulp.dest("./docs"));
@@ -83,14 +80,10 @@ gulp.task('usemin', ['sass'], function () {
                 return rev()
             }, function () {
                 return cssnano()
-            }],
-            js: [function () {
-                return rev()
-            }, function () {
-                return uglify()
             }]
         }))
         .pipe(gulp.dest("./docs"));
 });
 
 gulp.task('build', ['deleteDocsFolder', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger']);
+// gulp.task('build', ['deleteDocsFolder', 'copyGeneralFiles', 'optimizeImages']);

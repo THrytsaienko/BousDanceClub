@@ -63,7 +63,7 @@ $(() => {
     function getMapProperties(mapName) {
         return {
             cordinates: mapName === 'map' ? [50.4133761, 30.6176347] : [50.434663, 30.62238],
-            markerImage: 'marker-32.png',
+            markerImage: '../img/other_icons/marker-map.png',
             mapZoom: [16, 16]
         };
     }
@@ -113,23 +113,23 @@ $(document).ready(() => {
 });
 
 
-// RULES
-$(document).ready(() => {
-    var options = {
-        height: "1000px"
-    }
-    PDFObject.embed("/src/pdf/rules/school-rules.pdf", "#school-rules", options);
-    PDFObject.embed("/src/pdf/rules/age-category-inf.pdf", "#age-category-inf", options);
-    PDFObject.embed("/src/pdf/rules/dance-inf.pdf", "#dance-inf", options);
-    PDFObject.embed("/src/pdf/rules/clothes-inf.pdf", "#clothes-inf", options);
+// // RULES
+// $(document).ready(() => {
+//     var options = {
+//         height: "1000px"
+//     }
+//     PDFObject.embed("/src/pdf/rules/school-rules.pdf", "#school-rules", options);
+//     PDFObject.embed("/src/pdf/rules/age-category-inf.pdf", "#age-category-inf", options);
+//     PDFObject.embed("/src/pdf/rules/dance-inf.pdf", "#dance-inf", options);
+//     PDFObject.embed("/src/pdf/rules/clothes-inf.pdf", "#clothes-inf", options);
 
-});
+// });
 
 
 // LAZYLOAD PHOTOS
-// $(document).ready(() => {
-//     $('.lazy').Lazy();
-// });
+$(document).ready(() => {
+    $('.lazy').Lazy();
+});
 
 // $('.lazy').Lazy({
 //     // your configuration goes here

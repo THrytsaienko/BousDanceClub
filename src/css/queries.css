@@ -1,200 +1,203 @@
 @media only screen and (min-width: 1680px) {
-  .our_title {
-    font-size: 20px; }
-  .navbar-collapse {
-    margin: 0 170px 0 200px;
-    font-size: 18px !important; }
-  .collage {
-    max-width: 1700px; }
   .clear {
     clear: both;
     height: 30px; }
-  .social {
-    position: fixed;
-    top: 120px;
-    width: 10%; }
-  #advantages .advantages__item {
-    margin: 3px;
-    font-size: 21px;
-    width: 48%; }
-  .two-logos {
-    padding-top: 10px; }
   th {
     font-size: 17px;
     text-align: center; }
   tr {
     font-size: 17px;
     text-align: center; }
-  .upper-header p {
-    font-size: 22px; } }
+  #header .our_title {
+    font-size: 20px; }
+  #header .two-logos {
+    padding-top: 10px; }
+  #header .upper-header p {
+    font-size: 22px; }
+  #header .navbar-collapse,
+  #rules-pdf .navbar-collapse {
+    margin: 0 170px 0 200px;
+    font-size: 18px !important; }
+  #main-news .collage {
+    max-width: 1700px; }
+  #social-icons .social {
+    position: fixed;
+    top: 120px;
+    width: 10%; }
+  #advantages .advantages__item {
+    margin: 3px;
+    font-size: 21px; } }
 
 @media only screen and (max-width: 1679px) {
-  .our_title {
-    font-size: 17px; }
-  .navbar-collapse {
-    margin: 0 70px;
-    font-size: 15px !important; }
-  .collage {
-    max-width: 1600px; }
   .clear {
     clear: both;
     height: 30px; }
+  #header .our_title {
+    font-size: 17px; }
+  #header .upper-header p {
+    font-size: 20px; }
+  #header .navbar-collapse,
+  #rules-pdf .navbar-collapse {
+    margin: 0 70px;
+    font-size: 15px !important; }
+  #main-news .collage {
+    max-width: 1600px; }
   #advantages .advantages__item {
     margin: 3px;
-    font-size: 20px; }
-  .upper-header p {
     font-size: 20px; } }
 
 /* Big tablet to 1200px (width smaller than 1140px row)*/
 @media only screen and (max-width: 1365px) {
-  .our_title {
-    font-size: 15px; }
-  .navbar-collapse {
-    margin-right: 20px;
-    margin-left: 5px;
-    font-size: 12px !important; }
-  .collage {
-    max-width: 1400px; }
   .clear {
     clear: both;
     height: 30px; }
-  .embed-responsive-4by3 {
+  #header .our_title {
+    font-size: 15px; }
+  #header .navbar-collapse,
+  #rules-pdf .navbar-collapse {
+    margin-right: 20px;
+    margin-left: 5px;
+    font-size: 12px !important; }
+  #main-news .collage {
+    max-width: 1400px; }
+  #info-about-school .embed-responsive-4by3 {
     padding-bottom: 60%; }
   #advantages .advantages__item {
     margin: 3px;
     font-size: 19px; }
-  .school-block__logo {
+  #maps-classes #map {
+    width: 1000px;
+    height: 500px;
+    border-radius: 1%; }
+  #maps-classes #map2 {
+    width: 1000px;
+    height: 500px;
+    border-radius: 1%; }
+  #maps-classes .school-block__logo {
     padding-bottom: 15px; }
-  #map {
-    width: 1000px;
-    height: 500px;
-    border-radius: 1%; }
-  #map2 {
-    width: 1000px;
-    height: 500px;
-    border-radius: 1%; }
-  sl__news {
+  #main-news .sl__news {
     width: 80%;
     margin: 20px auto; }
-  .sl__slide {
+  #main-news .sl__slide {
     position: relative; }
-  .sl__img {
+  #main-news .sl__img {
     height: 250px;
     width: 250px; }
-  .sl__slide p {
+  #main-news .sl__slide p {
     font-size: 17px; }
-  .search-partners li {
+  #look-for-partner .search-partners li {
     list-style: none;
     max-width: 110%;
     margin: -10% !important;
     padding: 35px 15px 0px 10px; }
-  .search-partners p {
+  #look-for-partner .search-partners p {
     font-size: 17px; } }
 
 /* Small tablets to big tablets: from 768px to 1023px*/
 @media only screen and (max-width: 1023px) {
-  .our_title {
-    font-size: 16px; }
-  .navbar-collapse {
-    margin: 0 20px; }
-  .nav > li > a {
-    padding: 5px 7px; }
-  .sl__news {
-    width: 75%;
-    margin: 20px auto; }
-  .sl__slide {
-    position: relative; }
-  .sl__img {
-    height: 250px;
-    width: 250px; }
-  .sl__slide p {
-    font-size: 14px; }
   .clear {
     clear: both;
     height: 30px; }
-  .embed-responsive-4by3 {
-    padding-bottom: 60%; }
-  .coach_description {
+  #header .our_title {
     font-size: 16px; }
-  .school-block__logo {
+  #header .navbar-collapse,
+  #rules-pdf .navbar-collapse {
+    margin: 0 20px; }
+  #header .nav > li > a,
+  #rules-pdf .nav > li > a {
+    padding: 5px 7px; }
+  #main-news .sl__news {
+    width: 75%;
+    margin: 20px auto; }
+  #main-news .sl__slide {
+    position: relative; }
+  #main-news .sl__img {
+    height: 250px;
+    width: 250px; }
+  #main-news .sl__slide p {
+    font-size: 14px; }
+  #info-about-school .embed-responsive-4by3 {
+    padding-bottom: 60%; }
+  #coach-info .coach_description {
+    font-size: 16px; }
+  #maps-classes .school-block__logo {
     padding-bottom: 15px; }
-  .search-partners li {
+  #look-for-partner .search-partners li {
     padding: 80px 15px 0px 45px; }
   #advantages .advantages__item {
     margin: 3px;
     font-size: 17px; }
-  .social {
+  #social-icons .social {
     position: fixed;
     top: 30px;
     width: 10%; }
-  .social ul li {
+  #social-icons .social ul li {
     padding: 5px; }
-  .allfordance img {
+  #ad-for-dance .allfordance img {
     padding-top: 2%; } }
 
 /* Small phones to small tablets: from 481 to 767px*/
 @media only screen and (max-width: 767px) {
-  .our_title {
-    font-size: 10px; }
-  .about-school > ul {
-    padding-left: 0; }
-  .about-school > ul > li {
-    font-size: 12px;
-    margin-top: 1%; }
-  .about-school .glyphicon {
-    margin-right: 3%; }
   h2 {
     font-size: 18px; }
-  .sl__news {
-    width: 65%;
-    margin: 20px auto; }
-  #advantages .advantages__item {
-    margin: 3px;
-    font-size: 14px; }
-  .photos_IrenaBous,
-  .photos-Vit_Kat {
-    align-items: center; }
-  .social {
-    position: fixed;
-    top: 30px;
-    width: 10%; }
-  .social ul li {
-    padding: 5px; }
-  .sl__news {
-    width: 75%;
-    margin: 20px auto; }
-  .sl__slide {
-    position: relative; }
-  .sl__img {
-    height: 200px;
-    width: 200px; }
-  .embed-responsive-4by3 {
-    padding-bottom: 65%; }
+  h3 {
+    font-size: 20px; }
   .clear {
     clear: both;
     height: 30px; }
-  .contact_head p {
+  #header .our_title {
+    font-size: 10px; }
+  #header .header {
+    text-align: center; }
+  #info-about-school .about-school > ul {
+    padding-left: 0; }
+  #info-about-school .about-school > ul > li {
+    font-size: 12px;
+    margin-top: 1%; }
+  #info-about-school .about-school .fa {
+    margin-right: 1%; }
+  #info-about-school .embed-responsive-4by3 {
+    padding-bottom: 65%; }
+  #main-news .sl__news {
+    width: 85%;
+    margin: 20px auto; }
+  #main-news .sl__slide {
+    position: relative; }
+  #main-news .sl__img {
+    height: 200px;
+    width: 200px; }
+  #advantages .advantages__item {
+    margin: 3px;
+    font-size: 14px; }
+  #coach-info .photos_IrenaBous,
+  #coach-info .photos-Vit_Kat {
+    align-items: center; }
+  #coach-info .coach_description {
     font-size: 15px; }
-  h3 {
-    font-size: 20px; }
-  .nav-pills > li {
+  #social-icons .social {
+    position: fixed;
+    top: 45px;
+    width: 10%; }
+  #social-icons .social ul li {
+    padding: 5px; }
+  #maps-classes .contact_head p {
+    font-size: 15px; }
+  #maps-classes #map {
+    width: 720px; }
+  #maps-classes #map2 {
+    width: 720px; }
+  #header .nav-pills > li,
+  #rules-pdf .nav-pills > li {
     float: none; }
-  .nav-pills {
+  #header .nav-pills,
+  #rules-pdf .nav-pills {
     text-align: center; }
-  .header {
-    text-align: center; }
-  #map {
-    width: 720px; }
-  #map2 {
-    width: 720px; }
-  .coach_description {
-    font-size: 15px; }
-  .search-partners li {
+  #look-for-partner .search-partners li {
     padding: 50px 15px 0px 35px; }
-  .news__hidden {
+  #news .news__hidden {
     width: 370px !important;
     height: auto !important; }
-  .allfordance img {
+  #ad-for-dance .allfordance img {
     padding-top: 2%; } }
 
 /*For flex boxes*/
@@ -206,57 +209,53 @@
 
 /* Small phones: from 0 to 480px*/
 @media only screen and (max-width: 580px) {
-  section {
-    padding: 25px 0; }
-  .contact-form {
-    width: 100%; }
-  .our_title {
+  #header .our_title {
     font-size: 10px; }
-  sl__news {
-    width: 120%;
+  #main-news .sl__news {
+    width: 100%;
     margin: 10px auto; }
-  .sl__slide {
+  #main-news .sl__slide {
     position: relative; }
-  .sl__img {
-    height: 200px;
-    width: 200px; }
-  .sl__slide p {
+  #main-news .sl__img {
+    width: 450px;
+    height: auto;
+    margin: 0 auto; }
+  #main-news .sl__slide p {
     font-size: 12px; }
-  .upper-header p {
+  #header .upper-header p {
     font-size: 14px; }
-  .allfordance img {
+  #ad-for-dance .allfordance img {
     padding-top: 2%; } }
 
 @media only screen and (max-width: 480px) {
-  section {
-    padding: 25px 0; }
-  .contact-form {
-    width: 100%; }
-  .our_title {
-    font-size: 10px; }
-  sl__news {
-    width: 120%;
-    margin: 10px 0;
-    margin-left: 20px; }
-  .sl__slide {
-    position: relative; }
-  .sl__img {
-    height: 250px;
-    width: 250px; }
-  .sl__slide p {
-    font-size: 13px; }
-  .news__hidden {
-    width: 330px !important;
-    height: auto !important; }
   th {
     font-size: 12px;
     text-align: center; }
   tr {
     font-size: 10px;
     text-align: center; }
-  .upper-header p {
+  #header .upper-header p {
     font-size: 14px; }
-  .allfordance img {
+  #header .our_title {
+    font-size: 10px; }
+  #main-news .sl {
+    width: 90%; }
+  #main-news .sl__news {
+    width: 100%;
+    margin: 10px 0;
+    margin-left: 20px; }
+  #main-news .sl__slide {
+    position: relative; }
+  #main-news .sl__img {
+    height: auto;
+    width: 300px;
+    margin: 0 auto; }
+  #main-news .sl__slide p {
+    font-size: 12px; }
+  #news .news__hidden {
+    width: 330px !important;
+    height: auto !important; }
+  #ad-for-dance .allfordance img {
     padding-top: 4%; }
-  .allfordance p {
+  #ad-for-dance .allfordance p {
     font-size: 14px; } }

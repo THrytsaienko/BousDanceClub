@@ -7,28 +7,32 @@ const usemin = require('gulp-usemin');
 const rev = require('gulp-rev');
 const cssnano = require('gulp-cssnano');
 const uglify = require('gulp-uglify');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function () {
-    return gulp.src('src/scss/*.scss')
+    return gulp.src('./app/src/scss/*.scss')
         .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: 'last 4 versions',
+            cascade: false
+        }))
         .on('error', function (errorInfo) {
             console.log(errorInfo.toString());
             this.emit('end');
         })
-        .pipe(gulp.dest('src/css'))
+        .pipe(gulp.dest('./app/src/css'))
         .pipe(browserSync.stream());
 });
 
 // Watch Sass & Server
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
-        server: "../app"
+        server: "./app"
     });
-    gulp.watch('src/scss/*.scss', ['sass']);
-    gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch('./app/src/scss/*.scss', ['sass']);
+    gulp.watch("./app/*.html").on('change', browserSync.reload);
 });
-
 
 gulp.task('default', ['serve']);
 
@@ -89,4 +93,3 @@ gulp.task('usemin', ['sass'], function () {
 });
 
 gulp.task('build', ['deleteDocsFolder', 'copyGeneralFiles', 'optimizeImages', 'useminTrigger']);
-// gulp.task('build', ['deleteDocsFolder', 'copyGeneralFiles', 'optimizeImages']);

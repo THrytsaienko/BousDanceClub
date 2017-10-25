@@ -6,7 +6,6 @@ const del = require('del');
 const usemin = require('gulp-usemin');
 const rev = require('gulp-rev');
 const cssnano = require('gulp-cssnano');
-const uglify = require('gulp-uglify');
 const autoprefixer = require('gulp-autoprefixer');
 
 // Compile Sass & Inject Into Browser

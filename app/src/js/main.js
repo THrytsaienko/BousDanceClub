@@ -31,47 +31,6 @@ $(document).ready(() => {
 });
 
 
-// MAP
-$(() => {
-    function initMap() {
-        var arr_maps, location, mapObject, mapCanvas, mapOption, map, marker;
-
-        arr_maps = ['map', 'map2'];
-
-        for (i = 0; i <= arr_maps.length; i++) {
-
-            mapObject = getMapProperties(arr_maps[i]);
-
-            location = new google.maps.LatLng(mapObject.cordinates[0], mapObject.cordinates[1]);
-            mapCanvas = document.getElementById(arr_maps[i]);
-            mapOption = {
-                center: location,
-                zoom: mapObject.mapZoom[i],
-                panControl: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            map = new google.maps.Map(mapCanvas, mapOption);
-
-            marker = new google.maps.Marker({
-                position: location,
-                map: map,
-                icon: mapObject.markerImage
-            });
-        }
-    }
-
-    function getMapProperties(mapName) {
-        return {
-            cordinates: mapName === 'map' ? [50.4133761, 30.6176347] : [50.434663, 30.62238],
-            markerImage: '../img/other_icons/marker-map.png',
-            mapZoom: [16, 16]
-        };
-    }
-
-    google.maps.event.addDomListener(window, 'load', initMap);
-});
-
-
 // NEWS
 // Slick block for news page.
 $(document).ready(() => {
@@ -129,4 +88,64 @@ $(document).ready(() => {
 // LAZYLOAD PHOTOS
 $(document).ready(() => {
     $('.lazy').Lazy();
+});
+
+
+// MAP
+$(() => {
+    function initMap() {
+        var arr_maps, location, mapObject, mapCanvas, mapOption, map, marker;
+
+        arr_maps = ['map', 'map2'];
+
+        for (i = 0; i <= arr_maps.length; i++) {
+
+            mapObject = getMapProperties(arr_maps[i]);
+
+            location = new google.maps.LatLng(mapObject.cordinates[0], mapObject.cordinates[1]);
+            mapCanvas = document.getElementById(arr_maps[i]);
+            mapOption = {
+                center: location,
+                zoom: mapObject.mapZoom[i],
+                panControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(mapCanvas, mapOption);
+
+            marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                icon: mapObject.markerImage
+            });
+        }
+    }
+
+    function getMapProperties(mapName) {
+        return {
+            cordinates: mapName === 'map' ? [50.4133761, 30.6176347] : [50.434663, 30.62238],
+            markerImage: '../img/other_icons/marker-map.png',
+            mapZoom: [16, 16]
+        };
+    }
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+});
+
+/* Animation on scroll */
+$('.container-info').waypoint(function (direction) {
+    $('.container-info').addClass('animated zoomIn');
+}, {
+    offset: '75%'
+});
+
+$('.coach-block').waypoint(function (direction) {
+    $('.coach-block').addClass('animated fadeIn');
+}, {
+    offset: '70%'
+});
+
+$('.photos-Vit_Kat').waypoint(function (direction) {
+    $('.photos-Vit_Kat').addClass('animated bounceInRight');
+}, {
+    offset: '70%'
 });

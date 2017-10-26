@@ -294,7 +294,7 @@ h3:after {
 }
 
 #social-icons {
-    /*опустить саму панельку с иконками ниже*/
+    // Lower panel with icons below 
     .social {
         position: fixed;
         top: 110px;
@@ -402,7 +402,7 @@ h3:after {
     }
     .btn-color {
         background-color: $main-color !important;
-        color: #fff !important; //change to $
+        color: #fff !important;
     }
     .btn-default {
         background-color: #ddd;

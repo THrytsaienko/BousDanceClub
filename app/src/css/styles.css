@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*------------------------------------- COMMON SETTINGS-----------------------------------*/
 html,
 body {
@@ -272,74 +271,82 @@ h3:after {
 #ad-for-dance .grand_prix {
   font-family: 'Mr Bedfort', cursive; }
 
-#social-icons {
-  /*опустить саму панельку с иконками ниже*/ }
-  #social-icons .social {
-    position: fixed;
-    top: 110px;
-    width: 50px;
-    height: 50px;
-    z-index: 9999; }
-  #social-icons .social ul {
-    padding: 0px;
-    -webkit-transform: translate(-280px, 0);
-    -ms-transform: translate(-280px, 0);
-    transform: translate(-280px, 0); }
-  #social-icons .social ul li {
-    display: block;
-    margin: 5px;
-    margin-left: 15px;
-    background: rgba(199, 57, 57, 0.36);
-    width: 290px;
-    text-align: right;
-    padding: 8px;
-    border-radius: 0 30px 30px 0;
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; }
-  #social-icons .social ul li:hover {
-    -webkit-transform: translate(65px, 0);
-    -ms-transform: translate(65px, 0);
-    transform: translate(65px, 0);
-    background-color: #1400ff;
-    background: rgba(255, 255, 255, 0.4); }
-  #social-icons .social ul li:hover a {
-    color: #000; }
-  #social-icons .social ul li:hover i {
-    color: #000;
-    background: red;
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; }
-  #social-icons .social ul li i {
-    margin-left: 10px;
-    color: #000;
-    background: red;
-    padding: 10px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    background: #fff;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  #social-icons .fa {
-    /* padding: 10px; */
-    font-size: 20px !important;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 1px 1px; }
-  #social-icons .fa:hover {
-    opacity: 0.7; }
-  #social-icons .fa-facebook {
-    color: #3B5998; }
-  #social-icons .fa-instagram {
-    color: #125688; }
+#social-icons .social {
+  position: fixed;
+  top: 110px;
+  width: 50px;
+  height: 50px;
+  z-index: 9999; }
+
+#social-icons .social ul {
+  padding: 0px;
+  -webkit-transform: translate(-280px, 0);
+  -ms-transform: translate(-280px, 0);
+  transform: translate(-280px, 0); }
+
+#social-icons .social ul li {
+  display: block;
+  margin: 5px;
+  margin-left: 15px;
+  background: rgba(199, 57, 57, 0.36);
+  width: 290px;
+  text-align: right;
+  padding: 8px;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+#social-icons .social ul li:hover {
+  -webkit-transform: translate(65px, 0);
+  -ms-transform: translate(65px, 0);
+  transform: translate(65px, 0);
+  background-color: #1400ff;
+  background: rgba(255, 255, 255, 0.4); }
+
+#social-icons .social ul li:hover a {
+  color: #000; }
+
+#social-icons .social ul li:hover i {
+  color: #000;
+  background: red;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
+#social-icons .social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: red;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #fff;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+#social-icons .fa {
+  /* padding: 10px; */
+  font-size: 20px !important;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px; }
+
+#social-icons .fa:hover {
+  opacity: 0.7; }
+
+#social-icons .fa-facebook {
+  color: #3B5998; }
+
+#social-icons .fa-instagram {
+  color: #125688; }
 
 /*------------------------------------- ABOUT_US.HTML -------------------------------------------*/
 #coach-info .coach {

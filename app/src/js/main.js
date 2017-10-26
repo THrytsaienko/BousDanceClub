@@ -31,8 +31,7 @@ $(document).ready(() => {
 });
 
 
-// NEWS
-// Slick block for news page.
+// NEWS. Slick block for news page
 $(document).ready(() => {
     var slickClassName;
 
@@ -48,7 +47,7 @@ $(document).ready(() => {
 });
 
 
-// NEWS. Отборы по категориям, тегам.
+// NEWS. Select by categories, tags
 $(document).ready(() => {
     var newsBlock, index, searchClass, trigger;
     $('.hide-event').click(function () {
@@ -72,24 +71,10 @@ $(document).ready(() => {
 });
 
 
-// // RULES
-// $(document).ready(() => {
-//     var options = {
-//         height: "1000px"
-//     }
-//     PDFObject.embed("/src/pdf/rules/school-rules.pdf", "#school-rules", options);
-//     PDFObject.embed("/src/pdf/rules/age-category-inf.pdf", "#age-category-inf", options);
-//     PDFObject.embed("/src/pdf/rules/dance-inf.pdf", "#dance-inf", options);
-//     PDFObject.embed("/src/pdf/rules/clothes-inf.pdf", "#clothes-inf", options);
-
-// });
-
-
 // LAZYLOAD PHOTOS
 $(document).ready(() => {
     $('.lazy').Lazy();
 });
-
 
 // MAP
 $(() => {
@@ -112,10 +97,10 @@ $(() => {
             };
             map = new google.maps.Map(mapCanvas, mapOption);
 
+
             marker = new google.maps.Marker({
-                position: location,
                 map: map,
-                icon: mapObject.markerImage
+                position: location
             });
         }
     }
@@ -123,7 +108,6 @@ $(() => {
     function getMapProperties(mapName) {
         return {
             cordinates: mapName === 'map' ? [50.4133761, 30.6176347] : [50.434663, 30.62238],
-            markerImage: '../img/other_icons/marker-map.png',
             mapZoom: [16, 16]
         };
     }
@@ -131,7 +115,9 @@ $(() => {
     google.maps.event.addDomListener(window, 'load', initMap);
 });
 
-/* Animation on scroll */
+
+// ANIMATION ON SCROLL.
+// MAIN PAGE
 $('.container-info').waypoint(function (direction) {
     $('.container-info').addClass('animated zoomIn');
 }, {
@@ -144,6 +130,7 @@ $('.coach-block').waypoint(function (direction) {
     offset: '70%'
 });
 
+// ABOUT US 
 $('.photos-Vit_Kat').waypoint(function (direction) {
     $('.photos-Vit_Kat').addClass('animated bounceInRight');
 }, {

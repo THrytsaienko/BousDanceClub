@@ -31,49 +31,7 @@ $(document).ready(() => {
 });
 
 
-// MAP
-$(() => {
-    function initMap() {
-        var arr_maps, location, mapObject, mapCanvas, mapOption, map, marker;
-
-        arr_maps = ['map', 'map2'];
-
-        for (i = 0; i <= arr_maps.length; i++) {
-
-            mapObject = getMapProperties(arr_maps[i]);
-
-            location = new google.maps.LatLng(mapObject.cordinates[0], mapObject.cordinates[1]);
-            mapCanvas = document.getElementById(arr_maps[i]);
-            mapOption = {
-                center: location,
-                zoom: mapObject.mapZoom[i],
-                panControl: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            map = new google.maps.Map(mapCanvas, mapOption);
-
-            marker = new google.maps.Marker({
-                position: location,
-                map: map,
-                icon: mapObject.markerImage
-            });
-        }
-    }
-
-    function getMapProperties(mapName) {
-        return {
-            cordinates: mapName === 'map' ? [50.4133761, 30.6176347] : [50.434663, 30.62238],
-            markerImage: '../img/other_icons/marker-map.png',
-            mapZoom: [16, 16]
-        };
-    }
-
-    google.maps.event.addDomListener(window, 'load', initMap);
-});
-
-
-// NEWS
-// Slick block for news page.
+// NEWS. Slick block for news page
 $(document).ready(() => {
     var slickClassName;
 
@@ -89,7 +47,7 @@ $(document).ready(() => {
 });
 
 
-// NEWS. Отборы по категориям, тегам.
+// NEWS. Select by categories, tags
 $(document).ready(() => {
     var newsBlock, index, searchClass, trigger;
     $('.hide-event').click(function () {
@@ -113,27 +71,68 @@ $(document).ready(() => {
 });
 
 
-// // RULES
-// $(document).ready(() => {
-//     var options = {
-//         height: "1000px"
-//     }
-//     PDFObject.embed("/src/pdf/rules/school-rules.pdf", "#school-rules", options);
-//     PDFObject.embed("/src/pdf/rules/age-category-inf.pdf", "#age-category-inf", options);
-//     PDFObject.embed("/src/pdf/rules/dance-inf.pdf", "#dance-inf", options);
-//     PDFObject.embed("/src/pdf/rules/clothes-inf.pdf", "#clothes-inf", options);
-
-// });
-
-
 // LAZYLOAD PHOTOS
 $(document).ready(() => {
     $('.lazy').Lazy();
 });
 
-// $('.lazy').Lazy({
-//     // your configuration goes here
-//     scrollDirection: 'vertical',
-//     effect: 'fadeIn',
-//     visibleOnly: true
-// });
+// MAP
+$(() => {
+    function initMap() {
+        var arr_maps, location, mapObject, mapCanvas, mapOption, map, marker;
+
+        arr_maps = ['map', 'map2'];
+
+        for (i = 0; i <= arr_maps.length; i++) {
+
+            mapObject = getMapProperties(arr_maps[i]);
+
+            location = new google.maps.LatLng(mapObject.cordinates[0], mapObject.cordinates[1]);
+            mapCanvas = document.getElementById(arr_maps[i]);
+            mapOption = {
+                center: location,
+                zoom: mapObject.mapZoom[i],
+                panControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(mapCanvas, mapOption);
+
+
+            marker = new google.maps.Marker({
+                map: map,
+                position: location
+            });
+        }
+    }
+
+    function getMapProperties(mapName) {
+        return {
+            cordinates: mapName === 'map' ? [50.4133761, 30.6176347] : [50.434663, 30.62238],
+            mapZoom: [16, 16]
+        };
+    }
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+});
+
+
+// ANIMATION ON SCROLL.
+// MAIN PAGE
+$('.container-info').waypoint(function (direction) {
+    $('.container-info').addClass('animated zoomIn');
+}, {
+    offset: '75%'
+});
+
+$('.coach-block').waypoint(function (direction) {
+    $('.coach-block').addClass('animated fadeIn');
+}, {
+    offset: '70%'
+});
+
+// ABOUT US 
+$('.photos-Vit_Kat').waypoint(function (direction) {
+    $('.photos-Vit_Kat').addClass('animated bounceInRight');
+}, {
+    offset: '70%'
+});

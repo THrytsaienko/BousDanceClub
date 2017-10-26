@@ -52,7 +52,6 @@
   #social-icons .social ul li {
     padding: 5px; } }
 
-/* Big tablet to 1200px (width smaller than 1140px row)*/
 @media only screen and (max-width: 1365px) {
   .clear {
     clear: both;
@@ -99,7 +98,6 @@
   #look-for-partner .search-partners p {
     font-size: 17px; } }
 
-/* Small tablets to big tablets: from 768px to 1023px*/
 @media only screen and (max-width: 1023px) {
   .clear {
     clear: both;
@@ -142,7 +140,6 @@
   #ad-for-dance .allfordance img {
     padding-top: 2%; } }
 
-/* Small phones to small tablets: from 481 to 767px*/
 @media only screen and (max-width: 767px) {
   h2 {
     font-size: 18px; }
@@ -218,7 +215,6 @@
     -ms-flex-pack: distribute;
     justify-content: space-around; } }
 
-/* Small phones: from 0 to 480px*/
 @media only screen and (max-width: 580px) {
   #header .our_title {
     font-size: 10px; }
@@ -249,6 +245,10 @@
     font-size: 14px; }
   #header .our_title {
     font-size: 10px; }
+  #header #slideout {
+    top: 53px; }
+    #header #slideout .facebook-news-feed {
+      max-width: 100%; }
   #main-news .sl {
     width: 90%; }
   #main-news .sl__news {

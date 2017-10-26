@@ -75,6 +75,14 @@ h3:after {
         right: 0;
         transition-duration: 0.3s;
         z-index: 10000;
+        .facebook-news-feed {
+            border: none;
+            overflow: hidden;
+            width: 600px;
+            height: 450px;
+            background: white;
+            float: left;
+        }
     }
     #slideout_inner {
         position: fixed;

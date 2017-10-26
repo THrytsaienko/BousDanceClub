@@ -12,14 +12,14 @@ const autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function () {
     return gulp.src('./app/src/scss/*.scss')
         .pipe(sass())
-        .pipe(autoprefixer({
-            browsers: 'last 4 versions',
-            cascade: false
-        }))
         .on('error', function (errorInfo) {
             console.log(errorInfo.toString());
             this.emit('end');
         })
+        .pipe(autoprefixer({
+            browsers: 'last 4 versions',
+            cascade: false
+        }))
         .pipe(gulp.dest('./app/src/css'))
         .pipe(browserSync.stream());
 });

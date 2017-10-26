@@ -64,6 +64,13 @@ h3:after {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
   z-index: 10000; }
+  #header #slideout .facebook-news-feed {
+    border: none;
+    overflow: hidden;
+    width: 600px;
+    height: 450px;
+    background: white;
+    float: left; }
 
 #header #slideout_inner {
   position: fixed;

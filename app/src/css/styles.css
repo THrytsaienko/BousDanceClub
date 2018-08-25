@@ -97,7 +97,7 @@ h3:after {
 
 #header .nav > li > a,
 #rules-pdf .nav > li > a {
-  padding: 10px 10px; }
+  padding: 10px 20px; }
 
 #header .nav-pills li a,
 #rules-pdf .nav-pills li a {
@@ -463,3 +463,9 @@ h3:after {
   width: 550px;
   height: 500px;
   border-radius: 1%; }
+
+.new-set {
+  color: #ff0000;
+  font-family: 'Alice', serif;
+  text-align: center;
+  font-size: 38px; }

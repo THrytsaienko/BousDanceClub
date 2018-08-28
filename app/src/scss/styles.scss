@@ -365,6 +365,53 @@ h3:after {
 	}
 }
 
+.slick-prev {
+	left: -65px !important;
+}
+
+.slick-next {
+	right: -65px !important;
+}
+
+.slick-prev,
+.slick-next {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.slick-prev:before {
+	content: '←';
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-family: 'slick';
+	font-size: 25px !important;
+	line-height: 1;
+	opacity: .75;
+	color: red !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li button:before {
+	font-size: 15px !important;
+}
+
 /*------------------------------------- ABOUT_US.HTML -------------------------------------------*/
 
 #coach-info {
